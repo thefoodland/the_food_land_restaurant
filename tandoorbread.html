@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tandoor Bread - The Food Land Restaurant</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background: url('https://i.pinimg.com/736x/27/e0/e2/27e0e20ba0391c3f3cf47ed6c7d5ae92.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .menu-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .menu-title {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .menu-items {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #444;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .item-name {
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .item-price {
+            color: #d4af37;
+            font-weight: 700;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        footer {
+            background-color: #000;
+            padding: 50px 0 20px;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-column {
+            padding: 0 15px;
+        }
+        
+        .footer-column h3 {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column p {
+            color: #ccc;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+        
+        .footer-logo-img img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .footer-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+        
+        .contact-info-footer {
+            margin-bottom: 15px;
+        }
+        
+        .contact-info-footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info-footer a:hover {
+            color: #d4af37;
+        }
+        
+        .contact-info-footer i {
+            margin-right: 10px;
+            color: #d4af37;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .phone-numbers {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .phone-number {
+            margin-bottom: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: #d4af37;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-title {
+                font-size: 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-column {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-card">
+            <h1 class="menu-title">Tandoor Bread</h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">Chapati (Tawa)</span>
+                    <span class="item-price">20/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Paratha (Tawa)</span>
+                    <span class="item-price">40/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Tandoori Roti</span>
+                    <span class="item-price">25/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Butter Roti</span>
+                    <span class="item-price">30/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Garlic Roti</span>
+                    <span class="item-price">50/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Masala Roti</span>
+                    <span class="item-price">50/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Lachha Parata</span>
+                    <span class="item-price">60/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Plain Naan</span>
+                    <span class="item-price">65/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Butter Naan</span>
+                    <span class="item-price">70/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Garlic Naan</span>
+                    <span class="item-price">75/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Cheese Garlic Nan</span>
+                    <span class="item-price">100/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Veg Kulchha</span>
+                    <span class="item-price">80/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Paneer Kulchha</span>
+                    <span class="item-price">100/-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
