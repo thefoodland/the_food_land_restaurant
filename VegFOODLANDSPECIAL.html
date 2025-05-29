@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD LAND SPECIAL - VEG</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.85);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(20, 20, 20, 0.9);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37;
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #D4AF37;
+        }
+        
+        .menu-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+            align-items: center;
+        }
+        
+        .item-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+        
+        .item-price {
+            background-color: #D4AF37;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .special-badge {
+            background-color: #D4AF37;
+            color: #000;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>FOOD LAND SPECIAL</h1>
+            
+            <h2>VEG</h2>
+            <ul class="menu-items">
+                <li class="menu-item">
+                    <span class="item-name">BHAKAR (1 Pc.) <span class="special-badge">TRADITIONAL</span></span>
+                    <span class="item-price">50/-</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">PURAN POLI <span class="special-badge">SPECIAL</span></span>
+                    <span class="item-price">60/-</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">TAWA PARATHA</span>
+                    <span class="item-price">40/-</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">BAIGAN BHARTA <span class="special-badge">CHEF'S PICK</span></span>
+                    <span class="item-price">250/-</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
