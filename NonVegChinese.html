@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non Veg Chinese - The Food Land Restaurant</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background: url('https://i.pinimg.com/736x/27/e0/e2/27e0e20ba0391c3f3cf47ed6c7d5ae92.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .menu-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .menu-title {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .menu-items {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #444;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .item-name {
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .item-price {
+            color: #d4af37;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-card">
+            <h1 class="menu-title">Non Veg Chinese</h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">Chicken Fried Rice</span>
+                    <span class="item-price">280/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chicken Sezwan Fried Rice</span>
+                    <span class="item-price">310/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chicken Hakka Noodles</span>
+                    <span class="item-price">290/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chicken Noodles</span>
+                    <span class="item-price">280/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chicken Sezwan Noodles</span>
+                    <span class="item-price">310/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chicken in Hot Garlic</span>
+                    <span class="item-price">300/-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
